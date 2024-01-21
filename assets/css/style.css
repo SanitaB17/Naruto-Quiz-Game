@@ -3,46 +3,51 @@ body{
     width: 100%;
     text-align: center;
     font-family:'Nato Serif', serif;
-    color: black;
+    color: #23272e;
     background: url('../images/hero.webp')no-repeat;
     /* background: linear-gradient(25deg,#6cbaf2,#bde8fb,#e0f9fc) no-repeat; */
 }
 
 h1{
-    margin: 0, 7rem;
+    margin: 3rem;
     padding: 3rem;
     font-weight: 700px;
-    color: rgba(154,24,62,255);
-    background-color: rgb(250, 250, 250, 1.0);
+    color: #23272e;
+    background-color: #fffff7;
     text-transform: uppercase;
     display: flex;
     justify-content: center;
-    align-items: center;
+    border-radius: 7px; 
+    /* box-shadow was created using https://getcssscan.com/css-box-shadow-examples  */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 .container{
     width: 700px;
     max-width: 70%;
-    background-color: rgb(250, 250, 250, 1.0);
+    background-color: #fffff7;
     padding: 3rem;
     border-radius: 7px; 
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 1.5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 p{
     font-weight: 700;
 }
 button{
-    padding: 0.7rem;
-    color: black;
-    background-color: whitesmoke;
+    margin: 1rem;
+    padding: 1.2rem;
+    /* background-color:#fd8035; */
+    background-color: #fffff7;
     border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 #myDIV {
     width: 80vw;
     padding: 30px 0;
     text-align: center;
-    color:black;
-    background-color: rgb(250, 250, 250, 0.9);
+    background-color: #fffff7;
     border-radius: 7px; 
     text-align: left;
     display: none;
