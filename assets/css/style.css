@@ -1,17 +1,28 @@
+*{
+    
+}
 body{
-    height: 100vw;
+    min-height: 100%; /* enshures that background: linear-gradient covers all page */
     width: 100%;
     text-align: center;
     font-family:'Nato Serif', serif;
     color: #23272e;
-    background: url('../images/hero.webp')no-repeat;
-    /* background: linear-gradient(25deg,#6cbaf2,#bde8fb,#e0f9fc) no-repeat; */
+    background: linear-gradient(60deg,#ffab63, #ff7c14,#ffab63) no-repeat;
+    background-size: cover;
 }
-
+img{
+    width: 30vw;
+    /* position: absolute; */
+    left: 0rem;
+    right: 0;
+    border-radius: 70px;
+    /* z-index: -1; */
+}
 h1{
-    margin: 3rem;
-    padding: 3rem;
+    margin: 2rem;
+    padding: 2rem;
     font-weight: 700px;
+    font-size: 36px;
     color: #23272e;
     background-color: #fffff7;
     text-transform: uppercase;
@@ -21,11 +32,14 @@ h1{
     /* box-shadow was created using https://getcssscan.com/css-box-shadow-examples  */
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
+main{
+    flex: 10 auto;
+}
 .container{
     width: 700px;
     max-width: 70%;
     background-color: #fffff7;
-    padding: 3rem;
+    padding: 2rem;
     border-radius: 7px; 
     margin-left: auto;
     margin-right: auto;
@@ -37,11 +51,13 @@ p{
 }
 button{
     margin: 1rem;
-    padding: 1.2rem;
-    /* background-color:#fd8035; */
+    padding: 1rem 1.7rem;
+    text-transform: uppercase;
+    font-size: large;
+    font-weight: 700;
+    border: solid #3b2b35;
     background-color: #fffff7;
     border-radius: 5px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 #myDIV {
     width: 80vw;
