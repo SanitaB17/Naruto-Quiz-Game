@@ -13,7 +13,6 @@
     <link rel="manifest" href="assets/favicon/site.webmanifest">
     <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
 
     <!-- font awesome and google fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,16 +28,29 @@
 
     <!-- Home page, shows context befor starting game-->
     <main>
-        <div class="heading">
+        <div class="container">
             <h2>Discover Joy in the World of Japanese Animation!</h2>
             <p>Do you find joy in the captivating world of Japanese animation?  If so, you're in for a treat! Dive into the enchanting universe of Naruto with our quiz game.</p>
         </div>
-        <div><button>Start Quiz</button></div>
-        <div><button>Rules</button></div>
+        <div>
+            <button>Start Quiz</button>
+        </div>
+<!-- start ---  code taken from W3Schools  https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_toggle_hide_show-->
+        <button onclick="myFunction()">Rules</button>
+        <div id="myDIV">
+<!-- End-->
+            <ul>
+                <li>rule1</li>
+                <li>rule2</li>
+                <li>rule3</li>
+                <li>rule4</li>
+                <li>rule5</li>
+            </ul>
+        </div>
     </main>
     <!--Quiz rules -->
     <Section></Section>
-
+    <footer></footer>
    <script src="assets/js/script.js"></script>
 </body>
 </html>
