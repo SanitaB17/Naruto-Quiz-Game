@@ -79,8 +79,8 @@ button{
     font-size: medium;
     font-weight: 700;
   }
-  #question-box{
-    visibility: hidden;
+  #question-section{
+    /* visibility: hidden; */
   }
   #question{
     padding: 1rem;
@@ -93,38 +93,54 @@ button{
     background-color: #fff0cf;
     border: 1px solid #ffe3b2;
  }
-.btn:hover{
-    border-color: #231f21;
-}
+
 .inline{
     display: inline-flex;
     align-items: baseline;
     gap: 10px;
 }
+#score-section{
+    /* visibility: hidden; */
+}
 
-/* 
-    @media screen and (min-width: 576px){
-        h1{
+ @media screen and (min-width: 576px){
+    img{
+        width: 20vw;
+    }
+}
+@media screen and (min-width: 992px){
+    h1{
         max-width: 50%;
         margin-top: 0;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 2rem;
-        padding: 2rem;
-        font-weight: 800;
-        font-size: 58px;
-        }
-        img{
-            width: 20vw;
-        }
-        button{
-            margin: 1rem;
-            margin-bottom: 2rem;
-            padding: 1rem;
-            font-size: x-large;
-            border-radius: 12px;
-        }
-        h2{
-            font-size: 42;
-        }
-    } */
+        padding: 3rem;
+        font-weight: 700;
+        font-size: 46px;
+    }
+    img{
+        width: 14vw;
+    }
+    .container{
+        width: 880px;
+        max-width: 88%;
+    }
+    button{
+        margin: 1rem;
+        margin-bottom: 1rem;
+        padding: 1rem 2rem;
+        font-size: x-large;
+        border-radius: 12px;
+    }
+    .btn:hover{
+    border-color: #231f21;
+    transform: scale(1.1)
+    }
+    h2{
+        font-size: 40px;
+    }
+    p{
+        font-size: 22px;
+    }
+}

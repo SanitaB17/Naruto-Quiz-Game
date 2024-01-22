@@ -2,8 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Naruto, Animation, Manga, Game Quiz">
+    <meta name="keywords" content="Naruto, anime, animation, manga, quiz, game">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <title>Naruto Quiz Game</title>
 
     <!-- Favicon-->
     <link rel='shortcut icon' type='image/x-icon' href='favicon.ico'>
@@ -12,13 +16,12 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="assets/favicon/site.webmanifest">
     <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
 
         <!-- font awesome and google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300;700&display=swap" rel="stylesheet">
-    <title>Naruto Quiz Game</title>
+    <!-- Link to style.css -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -30,19 +33,19 @@
     </header>
 
     <!-- Home page, shows context befor starting game-->
-    <main>
+    <main id="home">
         <div class="container">
             <h2>Discover Joy in the World of Japanese Animation!</h2>
             <p>Do you find joy in the captivating world of Japanese animation?  If so, you're in for a treat! Dive into the enchanting universe of Naruto with our quiz game.</p>
         </div>
         <div>
-            <button>Start Quiz</button>
+            <button class="btn">Start Quiz</button>
         </div>
         
 <!-- start  code taken from W3Schools  https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_toggle_hide_show-->
-        <button class="rules" onclick="myFunction()">Rules</button>
+        <button class="btn" onclick="myFunction()">Rules</button>
         <div id="myDIV">
-            <!-- End -->
+<!-- End -->
             <h2>Rules of this Quiz</h2>
             <ol>
                 <li>You will have 10 seconds for each question.</li>
@@ -53,7 +56,8 @@
             </ol>
         </div>
     </main>
-    <section id="question-box">
+    <!-- Question Box Section -->
+    <section id="question-section">
         <div class="container">
             <div class="inline">
                 <h2>Naruto Quiz</h2>
@@ -75,6 +79,20 @@
             <div class="total-qustions">
                 <h4 class="inline"><span>0</span><span>OF</span><span>10</span><span>Questions</span></h4>
             </div>
+        </div>
+    </section>
+    <!-- End of Quiz Final page displays score and options to play again or retur to Home page -->
+    <section id="score-section">
+        <div class="container">
+            <h2> Your Score:</h2>
+            <div class="btn-grid">
+                <div>
+                    <button class="btn">Play Again</button>
+                </div>
+                <div>
+                    <button class="btn">Back Home</button>
+                </div>
+            </div>  
         </div>
     </section>
 
