@@ -96,8 +96,8 @@ li{
     gap: 10px;
 }
 #score-section{
-    /* visibility: hidden;
-} */
+    /* visibility: hidden;*/
+}
 @media screen and (min-width: 576px){
     img{
         width: 20vw;
