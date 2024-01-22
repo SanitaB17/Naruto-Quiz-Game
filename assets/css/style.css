@@ -1,47 +1,44 @@
-*{
-    
-}
 body{
-    min-height: 100%; /* enshures that background: linear-gradient covers all page */
+    min-height: 100%; /* ensures that background: linear-gradient covers all page */
     width: 100%;
     text-align: center;
-    font-family:'Nato Serif', serif;
+    font-family:'Noto Serif', serif;
+    word-spacing: 3px;
     color: #23272e;
     background: linear-gradient(60deg,#ffab63, #ff7c14,#ffab63) no-repeat;
     background-size: cover;
 }
 img{
-    width: 30vw;
-    /* position: absolute; */
-    margin-top: 2rem;
+    position: relative;
+    width: 40vw;
+    margin-top: 0.2rem;
     left: 0rem;
     right: 0;
     border-radius: 70px;
-    /* z-index: -1; */
 }
 h1{
-    margin: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1.8rem;
     padding: 2rem;
-    font-weight: 700px;
-    font-size: 36px;
+    font-weight: 700;
+    font-size: 24px;
     color: #23272e;
     background-color: #fffff7;
     text-transform: uppercase;
     display: flex;
     justify-content: center;
-    border-radius: 7px; 
+    border-radius: 7px;
     /* box-shadow was created using https://getcssscan.com/css-box-shadow-examples  */
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
-main{
-    flex: 10 auto;
-}
 .container{
-    width: 700px;
-    max-width: 70%;
+    width: 740px;
+    max-width: 74%;
     background-color: #fffff7;
-    padding: 2rem;
-    border-radius: 7px; 
+    padding: 1rem;
+    border-radius: 7px;
+    margin-top: auto;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1.5rem;
@@ -51,23 +48,83 @@ p{
     font-weight: 700;
 }
 button{
-    margin: 1rem;
-    padding: 1rem 1.7rem;
+    margin: 0.2rem;
+    margin-bottom: 2rem;
+    padding: 0.4rem 0.7rem;
     text-transform: uppercase;
     font-size: large;
     font-weight: 700;
     border: solid #3b2b35;
     background-color: #fffff7;
     border-radius: 5px;
+    cursor: pointer;
 }
 #myDIV {
-    width: 80vw;
-    padding: 30px 0;
+    width: 740px;
+    max-width: 74%;
+    padding: 1rem;
     text-align: center;
     background-color: #fffff7;
-    border-radius: 7px; 
+    border-radius: 7px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     text-align: left;
     display: none;
     margin-left: auto;
     margin-right: auto;
   }
+  #myDIV h2{
+    text-align: center;
+  }
+  li{
+    font-size: medium;
+    font-weight: 700;
+  }
+  #question-box{
+    visibility: hidden;
+  }
+  #question{
+    padding: 1rem;
+  }
+ .btn-grid{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+ }
+ .btn{
+    background-color: #fff0cf;
+    border: 1px solid #ffe3b2;
+ }
+.btn:hover{
+    border-color: #231f21;
+}
+.inline{
+    display: inline-flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+/* 
+    @media screen and (min-width: 576px){
+        h1{
+        max-width: 50%;
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2rem;
+        padding: 2rem;
+        font-weight: 800;
+        font-size: 58px;
+        }
+        img{
+            width: 20vw;
+        }
+        button{
+            margin: 1rem;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            font-size: x-large;
+            border-radius: 12px;
+        }
+        h2{
+            font-size: 42;
+        }
+    } */

@@ -6,7 +6,7 @@
     <meta name="description" content="Naruto, Animation, Manga, Game Quiz">
 
     <!-- Favicon-->
-    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico'/>
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico'>
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
@@ -14,19 +14,19 @@
     <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
 
-    <!-- font awesome and google fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300;700&display=swap" rel="stylesheet">
+        <!-- font awesome and google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300;700&display=swap" rel="stylesheet">
     <title>Naruto Quiz Game</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <header>
-         <div>
+        <div>
             <img src="assets/images/narutobg.webp" alt="Naruto and Kurama sleeping">
         </div>
-        <h1>Naruto Quiz Game</h1>
+         <h1>Naruto Quiz Game</h1>
     </header>
 
     <!-- Home page, shows context befor starting game-->
@@ -39,23 +39,45 @@
             <button>Start Quiz</button>
         </div>
         
-<!-- start ---  code taken from W3Schools  https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_toggle_hide_show-->
-        <button onclick="myFunction()">Rules</button>
+<!-- start  code taken from W3Schools  https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_toggle_hide_show-->
+        <button class="rules" onclick="myFunction()">Rules</button>
         <div id="myDIV">
-<!-- End-->
-            <ul>
-                <li>rule1</li>
-                <li>rule2</li>
-                <li>rule3</li>
-                <li>rule4</li>
-                <li>rule5</li>
-            </ul>
+            <!-- End -->
+            <h2>Rules of this Quiz</h2>
+            <ol>
+                <li>You will have 10 seconds for each question.</li>
+                <li>Once you select your answer, it can't be undone.</li>
+                <li>You can't select any option once the time runs out.</li>
+                <li>You can't exit the Quiz while you are playing.</li>
+                <li>You will earn points for each correct answer.</li>
+            </ol>
         </div>
-       
     </main>
-    <!--Quiz rules -->
-    <Section></Section>
-    <footer></footer>
+    <section id="question-box">
+        <div class="container">
+            <div class="inline">
+                <h2>Naruto Quiz</h2>
+                <!-- Time - will show how much left to answer the question -->
+                <p>Time <span>10</span></p>
+            </div>
+            <!-- Quiz questions -->
+            <div>
+                <div id="question"><h3>Question</h3></div>
+            </div>
+            <!-- Answer options -->
+            <div id="option-buttons" class="btn-grid">
+                <button class="btn">Option 1</button>
+                <button class="btn">Option 2</button>
+                <button class="btn">Option 3</button>
+                <button class="btn">Option 4</button>
+            </div>
+            <!-- Quiz box number of questions-->
+            <div class="total-qustions">
+                <h4 class="inline"><span>0</span><span>OF</span><span>10</span><span>Questions</span></h4>
+            </div>
+        </div>
+    </section>
+
    <script src="assets/js/script.js"></script>
 </body>
 </html>
