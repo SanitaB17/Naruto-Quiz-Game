@@ -71,29 +71,28 @@ button{
     display: none;
     margin-left: auto;
     margin-right: auto;
-  }
-  #myDIV h2{
+}
+#myDIV h2{
     text-align: center;
-  }
-  li{
+}
+li{
     font-size: medium;
     font-weight: 700;
-  }
-  #question-section{
+}
+#question-section{
     /* visibility: hidden; */
-  }
-  #question{
+}
+#question{
     padding: 1rem;
-  }
- .btn-grid{
+}
+.btn-grid{
     display: grid;
     grid-template-columns: repeat(2, auto);
- }
- .btn{
+}
+.btn{
     background-color: #fff0cf;
     border: 1px solid #ffe3b2;
- }
-
+}
 .inline{
     display: inline-flex;
     align-items: baseline;
@@ -102,8 +101,7 @@ button{
 #score-section{
     /* visibility: hidden; */
 }
-
- @media screen and (min-width: 576px){
+@media screen and (min-width: 576px){
     img{
         width: 20vw;
     }
