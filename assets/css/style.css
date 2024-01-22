@@ -1,26 +1,26 @@
-body{
-    min-height: 100%; /* ensures that background: linear-gradient covers all page */
-    width: 100%;
+body {
+    min-height: 100%;
+    max-width: 100%;
     text-align: center;
-    font-family:'Noto Serif', serif;
+    font-family: 'Noto Serif', serif;
     word-spacing: 3px;
     color: #231f21;
-    background: linear-gradient(60deg,#ffab63, #ff7c14,#ffab63) no-repeat;
+    background: linear-gradient(60deg, #ffab63, #ff7c14, #ffab63) no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-img{
-    position: relative;
+img {
     width: 40vw;
-    margin-top: 0.2rem;
-    left: 0rem;
-    right: 0;
+    max-width: 300px; /* Set a max-width for large screens */
+    margin-top: 1rem;
     border-radius: 70px;
 }
-h1{
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-bottom: 1.8rem;
-    padding: 2rem;
+h1 {
+    margin: 1rem;
+    padding: 1.4rem;
     font-weight: 700;
     font-size: 24px;
     color: #23272e;
@@ -29,24 +29,19 @@ h1{
     display: flex;
     justify-content: center;
     border-radius: 7px;
-    /* box-shadow was created using https://getcssscan.com/css-box-shadow-examples  */
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
-.container{
-    width: 740px;
-    max-width: 74%;
+.container {
+    width: 88%;
     background-color: #fffff7;
-    padding: 1rem;
+    padding: 0.4rem;
     border-radius: 7px;
-    margin-top: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2rem;
+    margin: 0.6rem auto;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
-button{
+button {
     margin: 0.2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     padding: 0.4rem 0.7rem;
     text-transform: uppercase;
     font-size: large;
@@ -57,8 +52,8 @@ button{
     cursor: pointer;
 }
 #myDIV {
-    width: 740px;
-    max-width: 74%;
+    width: 100%;
+    max-width: 740px;
     padding: 1rem;
     text-align: center;
     background-color: #fffff7;
@@ -66,104 +61,95 @@ button{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     text-align: left;
     display: none;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 3rem;
 }
-#myDIV h2{
+#myDIV h2 {
     text-align: center;
 }
-li{
+li {
     font-size: medium;
     font-weight: 700;
 }
-/* #question-section{
+#question-section {
     visibility: hidden;
-} */
-#question{
+}
+#question {
     padding: 1rem;
 }
-.btn-grid{
+
+.btn-grid {
     display: grid;
     grid-template-columns: repeat(2, auto);
 }
-.btn{
+.btn {
     background-color: #fff0cf;
     border: 2px solid #ffe3b2;
 }
-.inline{
+.inline {
     display: inline-flex;
     align-items: baseline;
     gap: 10px;
 }
-/* #score-section{
+#score-section {
     visibility: hidden;
-} */
+}
 /* 404 custom page style */
-#gif{
-    position: relative;
+#gif {
     width: 80vw;
+    max-width: 800px; /* Set a max-width for large screens */
     margin-top: 3rem;
-    left: 0rem;
-    right: 0;
     border-radius: 70px;
 }
-.custom-container{
-    width: 740px;
-    max-width: 74%;
+.custom-container {
+    width: 100%;
+    max-width: 740px;
     background-color: #fffff7;
     padding: 2rem;
     border-radius: 7px;
-    margin-top: 3rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20rem;
+    margin: 3rem auto 20rem;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
-@media screen and (min-width: 576px){
-    img{
-        width: 20vw;
+@media screen and (min-width: 576px) {
+    img {
+        width: 30vw;
     }
-    #gif{
+    #gif {
         width: 36vw;
     }
-    .custom-container{
+    .custom-container {
         margin-bottom: 22rem;
     }
 }
-@media screen and (min-width: 768px){
-    .custom-container{
+/* @media screen and (min-width: 768px) {
+    .custom-container {
         margin-bottom: 38rem;
     }
-}
-@media screen and (min-width: 992px){
-    h1{
-    font-size: 44px;
+} */
+@media screen and (min-width: 992px) {
+    h1 {
+        font-size: 44px;
     }
-    img{
-        width: 14vw;
+    img {
+        width: 20vw;
     }
-    .container{
-        width: 840px;
-        max-width: 84%;
-    }
-    button{
+    /* button {
         margin: 1rem;
         margin-bottom: 1rem;
         padding: 1rem 2rem;
         font-size: x-large;
         border-radius: 12px;
+    } */
+    .btn:hover {
+        border-color: #231f21;
+        transition: transform 0.3s ease-in-out;
     }
-    .btn:hover{
-    border-color: #231f21;
-    transition: transform 0.3s ease-in-out;
-    }
-    h2{
+    h2 {
         font-size: 38px;
     }
-    #gif{
+    #gif {
         width: 16vw;
-    } 
-    .custom-container{
+    }
+    .custom-container {
         margin-bottom: 16rem;
     }
 }
