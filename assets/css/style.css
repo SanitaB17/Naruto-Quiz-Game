@@ -44,9 +44,6 @@ h1{
     margin-bottom: 1.5rem;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
-p{
-    font-weight: 300;
-}
 button{
     margin: 0.2rem;
     margin-bottom: 2rem;
@@ -80,7 +77,7 @@ li{
     font-weight: 700;
 }
 #question-section{
-    visibility: hidden;
+    /* visibility: hidden; */
 }
 #question{
     padding: 1rem;
@@ -99,8 +96,8 @@ li{
     gap: 10px;
 }
 #score-section{
-    visibility: hidden;
-}
+    /* visibility: hidden;
+} */
 @media screen and (min-width: 576px){
     img{
         width: 20vw;
@@ -137,8 +134,5 @@ li{
     }
     h2{
         font-size: 38px;
-    }
-    p{
-        font-size: 22px;
     }
 }
