@@ -52,8 +52,8 @@ button {
     cursor: pointer;
 }
 #myDIV {
-    width: 100%;
-    max-width: 740px;
+    width: 88%;
+    max-width: 880px;
     padding: 1rem;
     text-align: center;
     background-color: #fffff7;
