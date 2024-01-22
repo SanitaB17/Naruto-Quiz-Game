@@ -45,7 +45,7 @@ h1{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 p{
-    font-weight: 700;
+    font-weight: 300;
 }
 button{
     margin: 0.2rem;
@@ -80,7 +80,7 @@ li{
     font-weight: 700;
 }
 #question-section{
-    /* visibility: hidden; */
+    visibility: hidden;
 }
 #question{
     padding: 1rem;
@@ -99,7 +99,7 @@ li{
     gap: 10px;
 }
 #score-section{
-    /* visibility: hidden; */
+    visibility: hidden;
 }
 @media screen and (min-width: 576px){
     img{
@@ -113,16 +113,16 @@ li{
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 2rem;
-        padding: 3rem;
+        padding: 2rem;
         font-weight: 700;
-        font-size: 46px;
+        font-size: 44px;
     }
     img{
         width: 14vw;
     }
     .container{
-        width: 880px;
-        max-width: 88%;
+        width: 840px;
+        max-width: 84%;
     }
     button{
         margin: 1rem;
@@ -136,7 +136,7 @@ li{
     transform: scale(1.1)
     }
     h2{
-        font-size: 40px;
+        font-size: 38px;
     }
     p{
         font-size: 22px;
