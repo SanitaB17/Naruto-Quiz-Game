@@ -107,14 +107,6 @@ li{
     right: 0;
     border-radius: 70px;
 }
-.custom{
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
 .custom-container{
     width: 740px;
     max-width: 74%;
@@ -132,7 +124,15 @@ li{
         width: 20vw;
     }
     #gif{
-        width: 26vw;
+        width: 36vw;
+    }
+    .custom-container{
+        margin-bottom: 22rem;
+    }
+}
+@media screen and (min-width: 768px){
+    .custom-container{
+        margin-bottom: 26rem;
     }
 }
 @media screen and (min-width: 992px){
