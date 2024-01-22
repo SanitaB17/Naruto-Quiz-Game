@@ -77,7 +77,7 @@ li{
     font-weight: 700;
 }
 #question-section{
-    /* visibility: hidden; */
+    visibility: hidden;
 }
 #question{
     padding: 1rem;
@@ -88,7 +88,7 @@ li{
 }
 .btn{
     background-color: #fff0cf;
-    border: 1px solid #ffe3b2;
+    border: 2px solid #ffe3b2;
 }
 .inline{
     display: inline-flex;
@@ -96,7 +96,7 @@ li{
     gap: 10px;
 }
 #score-section{
-    /* visibility: hidden;*/
+    visibility: hidden;
 }
 @media screen and (min-width: 576px){
     img{
@@ -130,7 +130,7 @@ li{
     }
     .btn:hover{
     border-color: #231f21;
-    transform: scale(1.1)
+    transition: transform 0.3s ease-in-out;
     }
     h2{
         font-size: 38px;
