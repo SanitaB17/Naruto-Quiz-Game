@@ -114,12 +114,7 @@ li{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
-
 }
-/* .custom h1{
-    font-size: 50px;
-} */
 .custom-container{
     width: 740px;
     max-width: 74%;
@@ -129,7 +124,7 @@ li{
     margin-top: 3rem;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 12rem;
+    margin-bottom: 20rem;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 @media screen and (min-width: 576px){
@@ -137,16 +132,8 @@ li{
         width: 20vw;
     }
     #gif{
-        width: 40vw;
-        margin: 3rem;
+        width: 26vw;
     }
-    /* .custom h1{
-        font-size: 58px;
-    }
-    .custom-container{
-        margin-top: 3rem;
-        margin-bottom: 14rem;
-    } */
 }
 @media screen and (min-width: 992px){
     h1{
@@ -173,8 +160,7 @@ li{
     h2{
         font-size: 38px;
     }
-    /* #gif{
-        width: 22vw;
-        margin: 1rem;
-    } */  
+    #gif{
+        width: 16vw;
+    }  
 }
