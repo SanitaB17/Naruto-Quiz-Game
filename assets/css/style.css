@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body {
     min-height: 100%;
     max-width: 100%;
@@ -73,10 +76,14 @@ li {
 #question-section {
     visibility: hidden;
 }
+#question-section{
+    width: 100vw;
+    height: 100vh;
+    max-width: 880px;
+}
 #question {
     padding: 1rem;
 }
-
 .btn-grid {
     display: grid;
     grid-template-columns: repeat(2, auto);
