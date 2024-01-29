@@ -1,3 +1,4 @@
+/* jshint esversion: 8 */ //helped to get rid of JSHint warnings
 const rulesDisplay = document.getElementById("rules-display");
 const header = document.getElementById("header");
 const startQuizBtn = document.getElementById("start-quiz-btn");
@@ -259,7 +260,7 @@ function showScore() {
   nextButton.innerHTML = "Play Again";
   nextButton.style.display = "inline";
 
-  //reloads page goes bck to home page
+  //reloads page goes back to home page
   nextButton.addEventListener("click", () => {
     location.reload();
   });
