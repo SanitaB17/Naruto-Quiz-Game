@@ -107,7 +107,7 @@ li {
     background-color: #ff7c14;
     border: 2px solid #ffe3b2;
     cursor: pointer;
-    /* display: none; */
+    display: none;
 }
 .correct{
     background-color: #14ff7c;
