@@ -183,6 +183,8 @@ const questions = [
   }
 ];
 
+const shuffledQuestions = shuffleArray(questions).slice(0, 10);
+
 let currentQuestionIndex = 0;
 let score = 0;
 
@@ -195,11 +197,12 @@ function startQuiz() {
 
 function showQuestion() {
   resetState();
-  let currentQuestion = questions[currentQuestionIndex];
+  let currentQuestion = shuffledQuestions[currentQuestionIndex];
   questionElement.innerHTML = currentQuestion.question;
 
-  // Clear previous answer buttons
-  currentQuestion.answers.forEach((answer, index) => {
+  // Shuffle and create answer buttons
+  const shuffledAnswers = shuffleArray(currentQuestion.answers);
+  shuffledAnswers.forEach((answer, index) => {
     const button = document.createElement("button");
     button.innerHTML = answer.text;
     button.classList.add("btn");
@@ -238,7 +241,7 @@ function selectAnswer(e) {
 
 function handleNextButton() {
   currentQuestionIndex++;
-  if (currentQuestionIndex < questions.length) {
+  if (currentQuestionIndex < shuffledQuestions.length) {
     showQuestion();
   } else {
     showScore();
@@ -246,7 +249,7 @@ function handleNextButton() {
 }
 
 nextButton.addEventListener("click", () => {
-  if (currentQuestionIndex < questions.length) {
+  if (currentQuestionIndex < shuffledQuestions.length) {
     handleNextButton();
   } else {
     startQuiz();
@@ -256,14 +259,23 @@ nextButton.addEventListener("click", () => {
 function showScore() {
   // Show the score and display Play Again button.
   resetState();
-  questionElement.innerHTML = `Your Score: ${score} of ${questions.length}!`;
+  questionElement.innerHTML = `Your Score: ${score} of ${shuffledQuestions.length}!`;
   nextButton.innerHTML = "Play Again";
   nextButton.style.display = "inline";
 
-  //reloads page goes back to home page
+  // Reloads page, goes back to home page
   nextButton.addEventListener("click", () => {
     location.reload();
   });
+}
+
+// Function to shuffle an array code taken from https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
 }
 
 startQuiz();

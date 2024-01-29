@@ -163,13 +163,6 @@ li {
     img {
         width: 20vw;
     }
-    /* button {
-        margin: 1rem;
-        margin-bottom: 1rem;
-        padding: 1rem 2rem;
-        font-size: x-large;
-        border-radius: 12px;
-    } */
     .btn:hover {
         border-color: #231f21;
         transition: transform 0.3s ease-in-out;
