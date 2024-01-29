@@ -97,11 +97,8 @@ li {
     align-items: baseline;
     gap: 10px;
 }
-#score-section {
-    visibility: hidden;
-}
-#next-btn{
-    letter-spacing: 3px;
+#next-btn {
+    letter-spacing: 1px;
     padding: 1rem 1.4rem;
     color: #fffff7;
     background-color: #ff7c14;
@@ -142,11 +139,6 @@ li {
         margin-bottom: 22rem;
     }
 }
-/* @media screen and (min-width: 768px) {
-    .custom-container {
-        margin-bottom: 38rem;
-    }
-} */
 @media screen and (min-width: 992px) {
     h1 {
         font-size: 44px;
@@ -154,21 +146,15 @@ li {
     img {
         width: 20vw;
     }
-    /* button {
-        margin: 1rem;
-        margin-bottom: 1rem;
-        padding: 1rem 2rem;
-        font-size: x-large;
-        border-radius: 12px;
-    } */
     .btn:hover {
         border-color: #231f21;
         transition: transform 0.3s ease-in-out;
     }
-    #next-btn{
+    #next-btn #back-home {
         padding: 1rem 2.2rem;
     }
     #next-btn:hover{
+        color: #fff0cf;
         background-color: #231f21;
         transition: transform 0.3s ease-in-out;
     }
