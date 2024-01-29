@@ -100,6 +100,13 @@ li {
 #score-section {
     visibility: hidden;
 }
+#next-btn{
+    letter-spacing: 3px;
+    padding: 1rem 1.4rem;
+    color: #fffff7;
+    background-color: #ff7c14;
+    border: 2px solid #ffe3b2;
+}
 /* 404 custom page style */
 #gif {
     width: 80vw;
@@ -148,6 +155,13 @@ li {
     } */
     .btn:hover {
         border-color: #231f21;
+        transition: transform 0.3s ease-in-out;
+    }
+    #next-btn{
+        padding: 1rem 2.2rem;
+    }
+    #next-btn:hover{
+        background-color: #231f21;
         transition: transform 0.3s ease-in-out;
     }
     h2 {
