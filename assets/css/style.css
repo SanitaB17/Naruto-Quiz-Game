@@ -106,6 +106,14 @@ li {
     color: #fffff7;
     background-color: #ff7c14;
     border: 2px solid #ffe3b2;
+    cursor: pointer;
+    /* display: none; */
+}
+.correct{
+    background-color: #14ff7c;
+}
+.incorrect{
+    background-color: #ff0014;
 }
 /* 404 custom page style */
 #gif {
