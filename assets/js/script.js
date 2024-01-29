@@ -11,10 +11,10 @@ const nextButton = document.getElementById("next-btn");
 // https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_toggle_hide_show
 rulesDisplay.onclick = () => {
   var x = document.getElementById("myDIV");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
+  if (x.style.display === "block") {
     x.style.display = "none";
+  } else {
+    x.style.display = "block";
   }
 };
 // End of taken code
@@ -189,7 +189,7 @@ let currentQuestionIndex = 0;
 let score = 0;
 
 function startQuiz() {
-  currentQuestionIndex = 0;
+  // currentQuestionIndex = 0;
   score = 0;
   nextButton.innerHTML = "Next";
   showQuestion();
