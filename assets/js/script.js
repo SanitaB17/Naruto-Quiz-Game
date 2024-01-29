@@ -72,6 +72,114 @@ const questions = [
       { text: "Shikamaru Nara", correct: false },
     ],
   },
+  {
+    question: "Which village does Naruto belong to?",
+    answers: [
+      { text: "Village Hidden in the Clouds", correct: false },
+      { text: "Village Hidden in the Sand", correct: false },
+      { text: "Village Hidden in the Mist", correct: false },
+      { text: "Village Hidden in the Leaves", correct: true },
+    ],
+  },
+  {
+    question: "What does Naruto dream of becoming?",
+    answers: [
+      { text: "Hokage", correct: true },
+      { text: "Doctor", correct: false },
+      { text: "Anbu", correct: false },
+      { text: "Jonin", correct: false },
+    ],
+  },
+  {
+    question: "What is the name of Naruto's father?",
+    answers: [
+      { text: "Jiraiya", correct: false },
+      { text: "Itachi", correct: false },
+      { text: "Kakashi", correct: false },
+      { text: "Minato", correct: true },
+    ],
+  },
+  {
+    question: "Who is Naruto's mother?",
+    answers: [
+      { text: "Tsunade", correct: false },
+      { text: "Kushina", correct: true },
+      { text: "Mebuki", correct: false },
+      { text: "Shizune", correct: false },
+    ],
+  },
+  {
+    question: "Which team is Naruto a part of during his early ninja missions?",
+    answers: [
+      { text: "Team 7", correct: true },
+      { text: "Team 2", correct: false },
+      { text: "Team 1", correct: false },
+      { text: "Team 8", correct: false },
+    ],
+  },
+  {
+    question: "Who taught Naruto the Rasengan?",
+    answers: [
+      { text: "Minato", correct: false },
+      { text: "Jiraiya", correct: true },
+      { text: "Yamato", correct: false },
+      { text: "Kakashi", correct: false },
+    ],
+  },
+  {
+    question: "What is Naruto's favorite catchphrase?",
+    answers: [
+      { text: "Believe it!", correct: true },
+      { text: "I Don't Know", correct: false },
+      { text: "You can do It!", correct: false },
+      { text: "Get Up!", correct: false },
+    ],
+  },
+  {
+    question: "What is the name of Naruto's favorite ramen shop?",
+    answers: [
+      { text: "Ginza Hachigo ramen", correct: false },
+      { text: "Menya Nukaji ramen", correct: false },
+      { text: "Kiraku ramen", correct: false },
+      { text: "Ichiraku Ramen", correct: true },
+    ],
+  },
+  {
+    question: "What is the special ability of Naruto's eyes when he is in Sage of the Six Paths mode?",
+    answers: [
+      { text: "Byakugan", correct: false },
+      { text: "Truth-Seeking Balls", correct: true },
+      { text: "Rinnegan", correct: false },
+      { text: "Sharingan", correct: false },
+    ],
+  },
+  {
+    question: "What is the name of the Hokage Monument in the Hidden Leaf Village?",
+    answers: [
+      { text: "Hokage Rock", correct: true },
+      { text: "Shinobi Rock", correct: false },
+      { text: "Jonin Rock", correct: false },
+      { text: "Anbu Rock", correct: false },
+    ],
+  },
+  {
+    question: "What is the name of Naruto's first ninja team captain?",
+    answers: [
+      { text: "Yamato", correct: false },
+      { text: "Kakashi", correct: true },
+      { text: "Jiraiya", correct: false },
+      { text: "Minato", correct: false },
+    ],
+  },
+  {
+    question: "What is the source of Naruto's enormous chakra reserves?",
+    answers: [
+      { text: "Shukaku", correct: false },
+      { text: "Gyuki", correct: false },
+      { text: "Kurama", correct: true },
+      { text: "Son Goku", correct: false },
+    ],
+  }
 ];
 
 let currentQuestionIndex = 0;
@@ -151,6 +259,7 @@ function showScore() {
   nextButton.innerHTML = "Play Again";
   nextButton.style.display = "inline";
 
+  //reloads page goes bck to home page
   nextButton.addEventListener("click", () => {
     location.reload();
   });
