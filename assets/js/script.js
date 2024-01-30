@@ -29,14 +29,13 @@ function togglePlayback() {
   if (narutoSong.paused) {
     narutoSong.play();
     narutoSong.loop = true;
-    playImg.src = "assets/images/pause.png";
+    playImg.src = "/assets/images/pause.webp";
   } else {
     narutoSong.pause();
     narutoSong.loop = false;
-    playImg.src = "assets/images/play.png";
+    playImg.src = "/assets/images/play.webp";
   }
 }
-
 
 // Hide sections when clicked on start quiz button and show questions section only
 startQuizBtn.addEventListener("click", () => {
