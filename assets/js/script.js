@@ -229,9 +229,9 @@ const questions = [
   {
     question: "When was the first season of naruto released?",
     answers: [
-      { text: "3. October 2002", correct: false },
+      { text: "3. October 2002", correct: true },
       { text: "17. October 2002", correct: false },
-      { text: "08. February 2007", correct: true },
+      { text: "08. February 2007", correct: false },
       { text: "6. December 2014", correct: false },
     ],
   }
