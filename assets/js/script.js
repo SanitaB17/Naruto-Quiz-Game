@@ -29,11 +29,11 @@ function togglePlayback() {
   if (narutoSong.paused) {
     narutoSong.play();
     narutoSong.loop = true;
-    playImg.src = "/assets/images/pause.webp";
+    playImg.src = "/assets/images/pause.jpeg";
   } else {
     narutoSong.pause();
     narutoSong.loop = false;
-    playImg.src = "/assets/images/play.webp";
+    playImg.src = "/assets/images/play.jpeg";
   }
 }
 
