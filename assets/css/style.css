@@ -94,6 +94,7 @@ h4{
 }
 #question {
     padding: 1rem;
+    font-weight: 700;
 }
 .btn-grid {
     display: flex;
