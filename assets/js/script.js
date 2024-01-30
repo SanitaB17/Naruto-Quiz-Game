@@ -18,6 +18,25 @@ rulesDisplay.onclick = () => {
   }
 };
 // End of taken code
+//Play song section, will play song when clicked on play image
+
+const playImg = document.getElementById("play-img");
+const narutoSong = document.getElementById("song");
+
+playImg.addEventListener("click", togglePlayback);
+
+function togglePlayback() {
+  if (narutoSong.paused) {
+    narutoSong.play();
+    narutoSong.loop = true;
+    playImg.src = "assets/images/pause.png";
+  } else {
+    narutoSong.pause();
+    narutoSong.loop = false;
+    playImg.src = "assets/images/play.png";
+  }
+}
+
 
 // Hide sections when clicked on start quiz button and show questions section only
 startQuizBtn.addEventListener("click", () => {
@@ -76,10 +95,10 @@ const questions = [
   {
     question: "Which village does Naruto belong to?",
     answers: [
-      { text: "Village Hidden in the Clouds", correct: false },
-      { text: "Village Hidden in the Sand", correct: false },
-      { text: "Village Hidden in the Mist", correct: false },
-      { text: "Village Hidden in the Leaves", correct: true },
+      { text: "Hidden in the Clouds", correct: false },
+      { text: "Hidden in the Sand", correct: false },
+      { text: "Hidden in the Mist", correct: false },
+      { text: "Hidden in the Leaves", correct: true },
     ],
   },
   {
@@ -149,7 +168,7 @@ const questions = [
     question: "What is the special ability of Naruto's eyes when he is in Sage of the Six Paths mode?",
     answers: [
       { text: "Byakugan", correct: false },
-      { text: "Truth-Seeking Balls", correct: true },
+      { text: "Truth-Seeking", correct: true },
       { text: "Rinnegan", correct: false },
       { text: "Sharingan", correct: false },
     ],
