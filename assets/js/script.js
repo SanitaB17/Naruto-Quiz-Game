@@ -183,6 +183,7 @@ const questions = [
   }
 ];
 
+
 const shuffledQuestions = shuffleArray(questions).slice(0, 10);
 
 let currentQuestionIndex = 0;
@@ -268,7 +269,7 @@ function showScore() {
     location.reload();
   });
 }
-
+// Takes an array as input and shuffles its elements randomly, then shuffled array is returned
 // Function to shuffle an array code taken from https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
