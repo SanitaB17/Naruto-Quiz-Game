@@ -198,6 +198,42 @@ const questions = [
       { text: "Kurama", correct: true },
       { text: "Son Goku", correct: false },
     ],
+  },
+  {
+    question: "What is the name of the technique Naruto develops during the Fourth Great Ninja War that combines Rasengan with Wind Release?",
+    answers: [
+      { text: "Rasengan", correct: false },
+      { text: "Rasenshuriken", correct: true },
+      { text: "Shadow Clone Jutsu", correct: false },
+      { text: "Chidori", correct: false },
+    ],
+  },
+  {
+    question: "In the original Naruto series, what does Naruto use to transform into when practicing the Transformation Jutsu?",
+    answers: [
+      { text: "A sexy woman.", correct: true },
+      { text: "A wise man", correct: false },
+      { text: "Hokage", correct: false },
+      { text: "Nine tailed beast", correct: false },
+    ],
+  },
+  {
+    question: "Who is the author of Naruto?",
+    answers: [
+      { text: "Seishi Kishimoto", correct: false },
+      { text: "Mikio Ikemoto", correct: false },
+      { text: "Masashi Kishimoto", correct: true },
+      { text: "Hayao Miyazaki", correct: false },
+    ],
+  },
+  {
+    question: "When was the first season of naruto released?",
+    answers: [
+      { text: "3. October 2002", correct: false },
+      { text: "17. October 2002", correct: false },
+      { text: "08. February 2007", correct: true },
+      { text: "6. December 2014", correct: false },
+    ],
   }
 ];
 

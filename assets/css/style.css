@@ -75,7 +75,7 @@ li {
 }
 #play-song{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 h4{
     padding: 0;
