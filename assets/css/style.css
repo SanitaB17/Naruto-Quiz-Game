@@ -73,6 +73,17 @@ li {
     font-size: medium;
     font-weight: 700;
 }
+#play-song{
+    display: flex;
+    align-items: center;
+}
+h4{
+    padding: 0;
+}
+#play-img{
+    width: 35%;
+    bottom: 7rem;
+}
 #question-section {
     visibility: hidden;
 }
@@ -166,6 +177,9 @@ li {
     }
     img {
         width: 20vw;
+    }
+    #play-img:hover{
+        transform: scale(1.1);
     }
     .btn:hover {
         border-color: #231f21;
