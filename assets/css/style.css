@@ -177,8 +177,8 @@ h4{
         padding: 1rem 2.2rem;
     }
     #next-btn:hover{
-        color: #231f21;
-        background-color: #ff7c14;
+        color: #fbfdfe;
+        background-color: #661400;
         transition: transform 0.3s ease-in-out;
     }
     h2 {
