@@ -190,7 +190,6 @@ Mobile view
 
 ![Mobile view](docs/mobile-view.JPG)
 
-
 \
 &nbsp;
 [Back to Top](#table-of-contents)

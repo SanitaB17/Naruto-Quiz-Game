@@ -98,8 +98,6 @@ h4{
 .btn-grid {
     display: flex;
     flex-direction: column;
-    /* display: grid;
-    grid-template-columns: repeat(2, auto); */
 }
 .btn {
     background-color: #fff0cf;
@@ -113,9 +111,8 @@ h4{
 #next-btn{
     letter-spacing: 1px;
     padding: 1rem 1.4rem;
-    color: #fffff7;
-    background-color: #ff7c14;
-    border: 2px solid #ffe3b2;
+    color:#fff0cf;
+    background-color: #231f21;;
     cursor: pointer;
     display: none;
 }
@@ -180,8 +177,8 @@ h4{
         padding: 1rem 2.2rem;
     }
     #next-btn:hover{
-        color: #fff0cf;
-        background-color: #231f21;
+        color: #231f21;
+        background-color: #ff7c14;
         transition: transform 0.3s ease-in-out;
     }
     h2 {
