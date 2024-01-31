@@ -24,6 +24,8 @@
   - [Pages and Features](#pages-and-features)
     - [Features to be Implemented](#features-to-be-implemented)
 - [Technology used](#technology-used)
+- [Testing and Validation](#testing-and-validation)
+  - [Functional Testing](#functional-testing)
 
 # UI
 
@@ -144,7 +146,7 @@ The website consists of a primary page, index.html, which serves as the central 
 - Main section:
 
   - Welcomes users with an inviting message, setting a friendly tone to encourage participation in the quiz.
-  - Uses a button that, when clicked, shows the quiz rules to ensure users understand them clearly.
+  - Rules button is implemented to provide guidance on how to play the quiz.
 
 ![Desktop view](docs/main.JPG)
 
@@ -188,7 +190,7 @@ The website consists of a primary page, index.html, which serves as the central 
 
 - 404 Page:
 
-    - A 404 page will be implemented and displayed if a user navigates to a broken link. A clickable link to the home page will be provided to ensure visitors can easily navigate back.
+  - A 404 page will be implemented and displayed if a user navigates to a broken link. A clickable link to the home page will be provided to ensure visitors can easily navigate back.
 
 ![Desktop](docs/custom-page.JPG)
 
@@ -236,3 +238,32 @@ Mobile view
 [Back to Top](#table-of-contents)
 \
 &nbsp;
+
+# Testing and Validation
+
+- HTML validation using [W3C Markup Validation](https://validator.w3.org/) results:
+  - [index.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsanitab17.github.io%2FNaruto-Quiz-Game%2F)
+  - 404.html
+  ![Custom Page Validation](docs/custom-page-html-test-result.JPG)
+- CSS validation using [W3C Jigsaw Validator](https://jigsaw.w3.org/css-validator/) results:
+  - [CSS](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fsanitab17.github.io%2FNaruto-Quiz-Game%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+- Java Script validation using [JSHint.](https://jshint.com/) results:
+  ![Java Script](docs/js-test.JPG)
+- Color Contrast Accessibility Validator using [A11Y](https://color.a11y.com/) resullts:
+  - ![A11Y](docs/color-contrast-test.JPG)
+- Accessibility testing using [Wave](https://wave.webaim.org/) results:
+  - [Wave Results](https://wave.webaim.org/report#/https://sanitab17.github.io/Naruto-Quiz-Game/)
+- Lighthouse test results:
+  
+  - ![Desktop](/docs/lighthouse-desktop.JPG)
+
+   -![Mobile](docs/lighthouse-mobile.JPG)
+
+\
+&nbsp;
+[Back to Top](#table-of-contents)
+\
+&nbsp;
+
+## Functional Testing
+
