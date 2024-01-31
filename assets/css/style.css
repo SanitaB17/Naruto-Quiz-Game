@@ -7,7 +7,7 @@ body {
     text-align: center;
     font-family: 'Noto Serif', serif;
     word-spacing: 3px;
-    color: #231f21;
+    color: #23272e;
     background: linear-gradient(60deg, #ffab63, #ff7c14, #ffab63) no-repeat;
     background-size: cover;
     display: flex;
@@ -26,7 +26,6 @@ h1 {
     padding: 1.4rem;
     font-weight: 700;
     font-size: 24px;
-    color: #23272e;
     background-color: #fffff7;
     text-transform: uppercase;
     display: flex;
@@ -111,16 +110,7 @@ h4{
     align-items: baseline;
     gap: 10px;
 }
-#next-btn #back-home{
-    letter-spacing: 1px;
-    padding: 1rem 1.4rem;
-    color: #fffff7;
-    background-color: #ff7c14;
-    border: 2px solid #ffe3b2;
-    cursor: pointer;
-    display: none;
-}
-#back-home{
+#next-btn{
     letter-spacing: 1px;
     padding: 1rem 1.4rem;
     color: #fffff7;
@@ -186,16 +176,11 @@ h4{
         border-color: #231f21;
         transition: transform 0.3s ease-in-out;
     }
-    #next-btn #back-home {
+    #next-btn {
         padding: 1rem 2.2rem;
     }
     #next-btn:hover{
         color: #fff0cf;
-        background-color: #231f21;
-        transition: transform 0.3s ease-in-out;
-    }
-    #back-home:hover{
-        color:#fffff7;
         background-color: #231f21;
         transition: transform 0.3s ease-in-out;
     }
