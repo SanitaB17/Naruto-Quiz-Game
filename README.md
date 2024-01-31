@@ -22,6 +22,8 @@
     - [Structure](#structure)
 - [Wireframes](#wireframes)
   - [Pages and Features](#pages-and-features)
+    - [Features to be Implemented](#features-to-be-implemented)
+- [Technology used](#technology-used)
 
 # UI
 
@@ -105,7 +107,11 @@ My website development will follow a mobile-first strategy, with an initial focu
 
 For structuring the website layout and design, I have chosen [Figma](https://www.figma.com/).
 
+- Desktop
+  
 ![Desktop Wireframes](docs/wireframes-desktop.JPG)
+
+- Mobile
 
 ![Mobile Wireframes](docs/wireframes-mobile.JPG)
 
@@ -196,3 +202,37 @@ Mobile view
 \
 &nbsp;
 
+### Features to be Implemented
+
+- Add more songs to play button image, to increase user expierence.
+- Add difficulty levels.
+
+\
+&nbsp;
+[Back to Top](#table-of-contents)
+\
+&nbsp;
+
+# Technology used
+
+- **[HTML](https://www.youtube.com/watch?v=3OTSsq9Y0P4&t=5s)** - The structure of the Website was developed using HTML as the main language.
+- **[CSS](https://www.youtube.com/watch?v=nV9oaUglBTE)** - The Website was styled using custom CSS in an external file.
+- **[Javascript](https://www.youtube.com/watch?v=wm4F0Zqxu5A)** - Font Awesome Icons were implemented using JavaScript.
+- **[VSCode](https://en.wikipedia.org/wiki/Visual_Studio_Code)** - The website was developed using Visual Studio Code IDE.
+- **[GitHub](https://en.wikipedia.org/wiki/GitHub)** - Source code is hosted on GitHub and delpoyed using Git Pages.
+- **[Git](https://en.wikipedia.org/wiki/Git)** - Used to commit and push code during the development opf the Website.
+- **[Google Fonts](https://fonts.google.com/)** - Google Fonts were used to style the text on the webpage.
+- **[Favicon.io](https://favicon.io/favicon-converter/)** - Was used to convert and create favicon files.
+- **[Figma](https://www.figma.com/)** - Was used to create both mobile and desktop wireframes.
+- **[Microsoft Paint](https://www.microsoft.com/en-us/windows/paint#paintcocreator)** - Was used to create play and pause image.
+- **[Voicy](https://www.voicy.network/search/naruto-sound-effects)** - Audio was sourced from voicy.
+- **[Image Color Picker](https://imagecolorpicker.com/)** - Was used to detect colours in images.
+- **[Convertio](https://convertio.co/)** - Was used to conver images to webp and png format.
+- **[Multi Device Website Mockup Generator](https://techsini.com/multi-mockup/index.php)** - Was used to check responsiveness on different devices.
+- **[ChatGPT](https://en.wikipedia.org/wiki/ChatGPT)** - Was used to create content and check for grammar.
+
+\
+&nbsp;
+[Back to Top](#table-of-contents)
+\
+&nbsp;
