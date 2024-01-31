@@ -77,19 +77,19 @@ Colors were carefully selected from the main image to achieve a harmonious and u
 
 Use of various colors will explain below.
 
-![Colour Scheme](docs/colors.JPG)
+![Colour Scheme](docs/quiz-colors.JPG)
 
-- #23272e - This color will be used for text color.
-- #ffab63 #ff7c14 #ffab63 - These three colors will be used to create a linear gradient for the body background, harmoniously matching with the image.
-- rgba(50, 50, 93, 0.25), rgba(0, 0, 0, 0.3), rgba(10, 37, 64, 0.35) - These three colors will be used for box shadow.
-- #fffff7 - This color will be used for the next button text color and h1 and containers' background color.
-- #3b2b35 - This color will be used for the button border color.
-- #fff0cf - This color will be used for the answer buttons' background color.
-- #ffe3b2 - This color will be used for the answer buttons and next button border color.
-- #ff7c14 - Used for the next button background color.
-- #14ff7c - This color will be used to indicate the correct answer.
-- #ff0014 - This color will be used to indicate the incorrect answer.
-- #231f21 - This color will be used as the border hover effect and background color for the next button.
+- #23272e: This color will be used for the text color.
+- #ffab63, #ff7c14: These colors will be used to create a linear gradient for the body background, harmoniously matching with the image.
+- rgba(50, 50, 93, 0.25), rgba(0, 0, 0, 0.3), rgba(10, 37, 64, 0.35): These three colors will be used for the box shadow.
+- #fffff7: This color will be used for the background color of h1 and containers.
+- #3b2b35: This color will be used for the border color of the buttons.
+- #fff0cf: This color will be used for the background color of the buttons and the next button.
+- #ffe3b2: This color will be used for the border color of the buttons.
+- #14ff7c: This color will be used to indicate the correct answer.
+- #ff0014: This color will be used to indicate the incorrect answer.
+- #231f21: This color will be used for the border hover effect for buttons.
+- #661400: This color will be used as the hover effect color for the next buttons.
 
 ### Structure
 
@@ -170,9 +170,9 @@ The website consists of a primary page, index.html, which serves as the central 
 
 ![Desktop view](docs/question-section.JPG)
 
-![Desktop view](docs/correct-incorrect-display.JPG)
+![Desktop view](docs/desktop-quzi-correct-incorrect.JPG)
 
-![Score Desktop view](docs/score-display.JPG)
+![Score Desktop view](docs/desktop-score-display.JPG)
 
 \
 &nbsp;
