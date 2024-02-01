@@ -7,6 +7,9 @@ const questionSection = document.getElementById("question-section");
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("option-buttons");
 const nextButton = document.getElementById("next-btn");
+const playImg = document.getElementById("play-img");
+const narutoSong = document.getElementById("song");
+
 // source code https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_toggle_hide_show
 rulesDisplay.onclick = () => {
   var x = document.getElementById("myDIV");
@@ -16,8 +19,6 @@ rulesDisplay.onclick = () => {
     x.style.display = "block";
   }
 };
-const playImg = document.getElementById("play-img");
-const narutoSong = document.getElementById("song");
 
 playImg.addEventListener("click", togglePlayback);
 
