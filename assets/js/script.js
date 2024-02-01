@@ -1,4 +1,4 @@
-/* jshint esversion: 8 */ //helped to get rid of JSHint warnings
+/* jshint esversion: 8 */
 const rulesDisplay = document.getElementById("rules-display");
 const header = document.getElementById("header");
 const startQuizBtn = document.getElementById("start-quiz-btn");
@@ -7,8 +7,7 @@ const questionSection = document.getElementById("question-section");
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("option-buttons");
 const nextButton = document.getElementById("next-btn");
-// Start of code taken and modified from w3 schools.com
-// https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_toggle_hide_show
+// source code https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_toggle_hide_show
 rulesDisplay.onclick = () => {
   var x = document.getElementById("myDIV");
   if (x.style.display === "block") {
@@ -17,9 +16,6 @@ rulesDisplay.onclick = () => {
     x.style.display = "block";
   }
 };
-// End of taken code
-//Play song section, will play song when clicked on play image
-
 const playImg = document.getElementById("play-img");
 const narutoSong = document.getElementById("song");
 
@@ -37,7 +33,6 @@ function togglePlayback() {
   }
 }
 
-// Hide sections when clicked on start quiz button and show questions section only
 startQuizBtn.addEventListener("click", () => {
   header.style.display = "none";
   homeMain.style.display = "none";
@@ -237,7 +232,6 @@ const questions = [
   }
 ];
 
-// Shuffles all questions (21) in Array and will display only first 10 questions from shuffled array
 const shuffledQuestions = shuffleArray(questions).slice(0, 10);
 
 let currentQuestionIndex = 0;
@@ -248,13 +242,12 @@ function startQuiz() {
   nextButton.innerHTML = "Next";
   showQuestion();
 }
-//shows current question, clears all previous answers buttons and creats new suffled buttons - if user plays again correct answers will be dispalyed in random button
+
 function showQuestion() {
   resetState();
   let currentQuestion = shuffledQuestions[currentQuestionIndex];
   questionElement.innerHTML = currentQuestion.question;
 
-  // Shuffle and create answer buttons
   const shuffledAnswers = shuffleArray(currentQuestion.answers);
   shuffledAnswers.forEach((answer, index) => {
     const button = document.createElement("button");
@@ -267,14 +260,14 @@ function showQuestion() {
     button.addEventListener("click", selectAnswer);
   });
 }
-// remove next button  and existing buttons, prepares for next question
+
 function resetState() {
   nextButton.style.display = "none";
   while (answerButtons.firstChild) {
     answerButtons.removeChild(answerButtons.firstChild);
   }
 }
-//Checks if selected answer is true/false and will display all styles and next button
+
 function selectAnswer(e) {
   const selectedBtn = e.target;
   const isCorrect = selectedBtn.dataset.correct === "true";
@@ -292,7 +285,7 @@ function selectAnswer(e) {
   });
   nextButton.style.display = "inline";
 }
-//when next button is clicked, checks if there is questions left to answer, if not will show score
+
 function handleNextButton() {
   currentQuestionIndex++;
   if (currentQuestionIndex < shuffledQuestions.length) {
@@ -301,7 +294,7 @@ function handleNextButton() {
     showScore();
   }
 }
-// listens for Next button, when clicked calls handleNextButton function
+
 nextButton.addEventListener("click", () => {
   if (currentQuestionIndex < shuffledQuestions.length) {
     handleNextButton();
@@ -309,20 +302,16 @@ nextButton.addEventListener("click", () => {
     startQuiz();
   }
 });
-//Displays quiz score and play again button
+
 function showScore() {
-  // Show the score and display Play Again button.
   resetState();
   questionElement.innerHTML = `Your Score: ${score} of ${shuffledQuestions.length}!`;
   nextButton.innerHTML = "Play Again";
   nextButton.style.display = "inline";
-
-  // Listens for Play again button, when clicked Reloads page, goes back to home page
   nextButton.addEventListener("click", () => {
     location.reload();
   });
 }
-// Takes an array as input and shuffles its elements randomly, then shuffled array is returned
 // Function to shuffle an array code taken from https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
@@ -331,5 +320,4 @@ function shuffleArray(array) {
   }
   return array;
 }
-// calls start startQuiz function
 startQuiz();
