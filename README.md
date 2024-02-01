@@ -12,6 +12,7 @@
   - [Table of Contents](#table-of-contents)
 - [UI](#ui)
   - [User](#user)
+  - [User Goals](#user-goals)
   - [User Stories](#user-stories)
     - [Site owners Goals](#site-owners-goals)
     - [Requirements](#requirements)
@@ -35,6 +36,8 @@
 # UI
 
 ## User
+
+## User Goals
 
 - Visually appealing.
 - Test their knowledge.
