@@ -15,6 +15,7 @@
   - [User Stories](#user-stories)
     - [Site owners Goals](#site-owners-goals)
     - [Requirements](#requirements)
+    - [Expectations](#expectations)
   - [Design Choices](#design-choices)
     - [Fonts](#fonts)
     - [Icons](#icons)
@@ -62,6 +63,14 @@
 - Easy to navigate on various screen sizes and search engines.
 - Visually appealing and user-friendly design.
 - Quiz game should respond to user interactions quickly.
+
+### Expectations
+
+- I expect all buttons to work.
+- I expect to easily control the audio.
+- I expect all questions and answers to be displayed correctly with indicating colors for the selected option.
+- I expect to see the quiz score.
+- I expect the screen size not to affect the quality of the website.
 
 \
 &nbsp;
