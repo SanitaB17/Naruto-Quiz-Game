@@ -4,7 +4,7 @@
 
 [live Preview of Naruto Quiz Game](https://sanitab17.github.io/Naruto-Quiz-Game/)
 
-![Responsive Displays](docs/multi-view.JPG)
+![Responsive Displays](docs/responsive-mockup.JPG)
 
 ## Table of Contents
 
@@ -26,6 +26,10 @@
 - [Technology used](#technology-used)
 - [Testing and Validation](#testing-and-validation)
   - [Functional Testing](#functional-testing)
+  - [User Story Testing](#user-story-testing)
+  - [Bugs](#bugs)
+- [Deployment](#deployment)
+- [Credits](#credits)
 
 # UI
 
@@ -221,12 +225,13 @@ Mobile view
 - **[CSS](https://www.youtube.com/watch?v=nV9oaUglBTE)** - The Website was styled using custom CSS in an external file.
 - **[Javascript](https://www.youtube.com/watch?v=wm4F0Zqxu5A)** - Font Awesome Icons were implemented using JavaScript.
 - **[VSCode](https://en.wikipedia.org/wiki/Visual_Studio_Code)** - The website was developed using Visual Studio Code IDE.
+- **[Google DevTools](https://developer.chrome.com/docs/devtools/accessibility/reference)** - Used for checking responsiveness.
 - **[GitHub](https://en.wikipedia.org/wiki/GitHub)** - Source code is hosted on GitHub and delpoyed using Git Pages.
 - **[Git](https://en.wikipedia.org/wiki/Git)** - Used to commit and push code during the development opf the Website.
 - **[Google Fonts](https://fonts.google.com/)** - Google Fonts were used to style the text on the webpage.
 - **[Favicon.io](https://favicon.io/favicon-converter/)** - Was used to convert and create favicon files.
 - **[Figma](https://www.figma.com/)** - Was used to create both mobile and desktop wireframes.
-- **[Microsoft Paint](https://www.microsoft.com/en-us/windows/paint#paintcocreator)** - Was used to create play and pause image.
+- **[Microsoft Paint](https://www.microsoft.com/en-us/windows/paint#paintcocreator)** - It was used to create play and pause images.
 - **[Voicy](https://www.voicy.network/search/naruto-sound-effects)** - Audio was sourced from voicy.
 - **[Image Color Picker](https://imagecolorpicker.com/)** - Was used to detect colours in images.
 - **[Convertio](https://convertio.co/)** - Was used to conver images to webp and png format.
@@ -251,8 +256,9 @@ Mobile view
   ![Java Script](docs/js-test.JPG)
 - Color Contrast Accessibility Validator using [A11Y](https://color.a11y.com/) resullts:
   - ![A11Y](docs/color-contrast-test.JPG)
-- Accessibility testing using [Wave](https://wave.webaim.org/) results:
+- Accessibility testing using [Wave](https://wave.webaim.org/) results: The test revealed one alert due to the presence of audio element.
   - [Wave Results](https://wave.webaim.org/report#/https://sanitab17.github.io/Naruto-Quiz-Game/)
+  
 - Lighthouse test results:
   
   - ![Desktop](/docs/lighthouse-desktop.JPG)
@@ -267,3 +273,108 @@ Mobile view
 
 ## Functional Testing
 
+|Test scenario|Steps|Observation| Pass |
+|-------------|------------------|-----------|-------|
+|Rules button|Click on the Rules button.| The Rules button should reveal and hide the rules section.|Pass|
+|Play button|Click on the Play buttonn.|On clicking the Play button, it should start playing audio.|Pass|
+|Pause Button| Click on the Pause Button.|On clicking the Pause button, it should stop playing audio.|pass|
+|Start Quiz button| Click on the Start Quiz button.| On clicking it, the question area should be displayed.|Pass|
+|Answer Option buttons|Click on the answer option buttons.|On clicking, they should display green for the correct answer and red for an incorrect answer.|Pass|
+|Next button|1. Click on the answer option buttons. <br>2. Click on the next button|1. The Next button should be displayed only when an answer option button is clicked.<br> 2. On clicking, it should lead to the next question. When the last question is answered, it should lead to the score section.|Pass|
+|Play Again Button|Click on the play again button.|When clicked, it should reload the window and display the main section.| Pass|
+|Questions|Play the quiz multiple times.| Questions should be randomly shuffled and displayed in sets of 10 per quiz.| Pass|
+|Correct Answers| Play the quiz multiple times.|The correct answer should be shuffled and displayed in different buttons.|Pass|
+
+\
+&nbsp;
+[Back to Top](#table-of-contents)
+\
+&nbsp;
+
+## User Story Testing
+
+|  User Story| Expected Result | Pass|
+|-----------|-----------------|--------|
+|As a user, I want to be able to play quiz using multiple devices.|The website should open seamlessly on various devices with different screen sizes and across multiple browsers, including Google Chrome, Microsoft Edge, Mozilla Firefox, and Safari.|Pass|
+|As a user, I want to be entertained.|Music audio should be implemented to keep the user entertained while playing the quiz.|Pass|
+|As a user, I want to test my knowledge.| Implement more than 10 questions, display them randomly, and show the correct answer in different buttons. This allows users to test their knowledge rather than memorize answers.|Pass|
+|As a user, I want to be able to see my quiz score and review the correct answers after completing the quiz.|At the end of the quiz, the user's score should be displayed.|Pass|
+
+\
+&nbsp;
+[Back to Top](#table-of-contents)
+\
+&nbsp;
+
+## Bugs
+
+No bugs were identified in the final project. However, there is one accessibility alert related to the presence of audio elements that needs to be addressed and fixed.
+
+![Accessibility Alert](docs/accessibility-alert.JPG)
+
+\
+&nbsp;
+[Back to Top](#table-of-contents)
+\
+&nbsp;
+
+# Deployment
+
+**Deployment to Github Pages**
+
+- The site was deployed to GitHub pages. The steps to deploy are:
+
+  1. Select the repository from the repository list.
+  2. Go to the 'Settings' tab.
+  3. In the sidebar menu, navigate to 'Pages.'
+  4. In the None dropdown and choose Main.
+  5. Click 'Save.'
+  6. The link to access the deployed page will be displayed at the top of the page.
+
+You can access the deployed [Naruto Quiz Game](https://sanitab17.github.io/Naruto-Quiz-Game/).
+
+**Clone the Repository**
+
+- Navigate to the GitHub Repository you want to clone to use locally:
+
+  1. Click on the code drop down button
+  2. Click on HTTPS
+  3. Copy the repository link to the clipboard
+  4. Open your IDE of choice
+  5. Type git clone copied-git-url into the IDE terminal
+
+The project will now be cloned on your local machine for use.
+
+\
+&nbsp;
+[Back to Top](#table-of-contents)
+\
+&nbsp;
+
+# Credits
+
+ For Images
+  - [Wall Alphacoders](https://wall.alphacoders.com/)
+
+For Gif
+  - [Icegif](https://www.icegif.com/search/naruto/)
+
+For box shadow effect
+- [Get Css Scan](https://getcssscan.com/css-box-shadow-examples)
+
+Audio
+  - [Voicy](https://www.voicy.network/search/naruto-sound-effects)
+
+For toggle button
+- [w3schools](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_toggle_hide_show)
+
+For answers array and understandig how quiz works
+- [Web Dev Simplified](https://www.youtube.com/@WebDevSimplified)
+- [Web Genie](https://www.youtube.com/watch?v=hgHuPWM6xAg)
+- [Great Stack](https://www.youtube.com/watch?v=PBcqGxrr9g8&t=187s)
+
+For array shuffle:
+- [Stack overflow](https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array)
+
+For checking grammar and content
+- [ChatGPT](https://en.wikipedia.org/wiki/ChatGPT)
