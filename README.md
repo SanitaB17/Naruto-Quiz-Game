@@ -101,7 +101,7 @@ Use of various colors will explain below.
 
 ### Structure
 
-My website development will follow a mobile-first strategy, with an initial focus on smaller screens. I utilized Google Chrome DevTools to initiate styling for the Samsung Galaxy Fold, which has a width of 280px. I subsequently added breakpoints for screens with widths of 576px, 768px, and 992px.
+My website development will follow a mobile-first strategy, with an initial focus on smaller screens. I utilized [Google Chrome DevTools](https://developer.chrome.com/docs/devtools) to initiate styling for the Samsung Galaxy Fold, which has a width of 280px. I subsequently added breakpoints for screens with widths of 576px, 768px, and 992px.
 
 \
 &nbsp;
@@ -227,7 +227,7 @@ Mobile view
 - **[VSCode](https://en.wikipedia.org/wiki/Visual_Studio_Code)** - The website was developed using Visual Studio Code IDE.
 - **[Google DevTools](https://developer.chrome.com/docs/devtools/accessibility/reference)** - Used for checking responsiveness.
 - **[GitHub](https://en.wikipedia.org/wiki/GitHub)** - Source code is hosted on GitHub and delpoyed using Git Pages.
-- **[Git](https://en.wikipedia.org/wiki/Git)** - Used to commit and push code during the development opf the Website.
+- **[Git](https://en.wikipedia.org/wiki/Git)** - Used to commit and push code during the development of the Quiz Game.
 - **[Google Fonts](https://fonts.google.com/)** - Google Fonts were used to style the text on the webpage.
 - **[Favicon.io](https://favicon.io/favicon-converter/)** - Was used to convert and create favicon files.
 - **[Figma](https://www.figma.com/)** - Was used to create both mobile and desktop wireframes.
