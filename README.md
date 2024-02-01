@@ -298,7 +298,7 @@ Mobile view
 |As a user, I want to be able to play quiz using multiple devices.|The website should open seamlessly on various devices with different screen sizes and across multiple browsers, including Google Chrome, Microsoft Edge, Mozilla Firefox, and Safari.|Pass|
 |As a user, I want to be entertained.|Music audio should be implemented to keep the user entertained while playing the quiz.|Pass|
 |As a user, I want to test my knowledge.| Implement more than 10 questions, display them randomly, and show the correct answer in different buttons. This allows users to test their knowledge rather than memorize answers.|Pass|
-|As a user, I want to be able to see my quiz score and review the correct answers after completing the quiz.|At the end of the quiz, the user's score should be displayed.|Pass|
+|As a user, I want to be able to see my quiz score after completing the quiz.|At the end of the quiz, the user's score should be displayed.|Pass|
 
 \
 &nbsp;
